@@ -4,9 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dwcdn/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dwcdn/css/bootstrap-theme.min.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
     <title>Document</title>
 </head>
-<body>
-    
+<body class="container body">
+        <div class="landing_navbar">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-3">
+                        <div id="header_logo">
+                            <a href="" target="_self" class="has-category"><img class="logo img-responsive" src="images/logo/logo.png" alt="SPHE" width="270" height="50"></a>
+                        </div>
+                    </div>
+                    <ul class="nav navbar-nav megamenu">
+                        <li class="part"><a href="behaviour.html" target="_self" class="has-category"><span class="menu-title">Pendientes</span></a></li>
+                        <li class="part"><a href="diet.html" target="_self" class="has-category"><span class="menu-title">Colgantes</span></a></li>
+                        <li class="part"><a href="eyes.html" target="_self" class="has-category"><span class="menu-title">Aros</span></a></li>
+                        <li class="part"><a href="fsf+others.html" target="_self" class="has-category"><span class="menu-title">Anillos</span></a></li>
+                        <li class="part"><a href="shopinsta.html" target="_self" class="has-category"><span class="menu-title">@pardobymireiapardo</span></a></li>
+                        <li class="part"><a href="grooming.html" target="_self" class="has-category"><span class="menu-title"><i class="fas fa-user"></i> Mi cuenta</span></a></li>
+                    </ul>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" type="button" class="dropbtn navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
+                            <!--creates collapsed menu icon appearance-->
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <ul class="nav navbar-nav">
+                                <li class="part"><a href="behaviour.html" target="_self" class="has-category"><span class="menu-title">Pendientes</span></a></li>
+                                <li class="part"><a href="diet.html" target="_self" class="has-category"><span class="menu-title">Colgantes</span></a></li>
+                                <li class="part"><a href="eyes.html" target="_self" class="has-category"><span class="menu-title">Aros</span></a></li>
+                                <li class="part"><a href="fsf+others.html" target="_self" class="has-category"><span class="menu-title">Anillos</span></a></li>
+                                <li class="part"><a href="shopinsta.html" target="_self" class="has-category"><span class="menu-title">@pardobymireiapardo</span></a></li>
+                                <li class="part"><a href="grooming.html" target="_self" class="has-category"><span class="menu-title"><i class="fas fa-user"></i> Mi cuenta</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>            
+    <footer>
+
+    </footer>
 </body>
 </html>
