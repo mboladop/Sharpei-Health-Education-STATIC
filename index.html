@@ -19,12 +19,11 @@
                         </div>
                     </div>
                     <ul class="nav navbar-nav megamenu">
-                        <li class="part"><a href="behaviour.html" target="_self" class="has-category"><span class="menu-title">Pendientes</span></a></li>
-                        <li class="part"><a href="diet.html" target="_self" class="has-category"><span class="menu-title">Colgantes</span></a></li>
-                        <li class="part"><a href="eyes.html" target="_self" class="has-category"><span class="menu-title">Aros</span></a></li>
-                        <li class="part"><a href="fsf+others.html" target="_self" class="has-category"><span class="menu-title">Anillos</span></a></li>
-                        <li class="part"><a href="shopinsta.html" target="_self" class="has-category"><span class="menu-title">@pardobymireiapardo</span></a></li>
-                        <li class="part"><a href="grooming.html" target="_self" class="has-category"><span class="menu-title"><i class="fas fa-user"></i> Mi cuenta</span></a></li>
+                        <li class="part"><a href="behaviour.html" target="_self" class="has-category"><span class="menu-title">BEHAVIOUR</span></a></li>
+                        <li class="part"><a href="diet.html" target="_self" class="has-category"><span class="menu-title">DIET</span></a></li>
+                        <li class="part"><a href="eyes.html" target="_self" class="has-category"><span class="menu-title">EYES</span></a></li>
+                        <li class="part"><a href="fsf+others.html" target="_self" class="has-category"><span class="menu-title">FSF+</span></a></li>
+                        <li class="part"><a href="grooming.html" target="_self" class="has-category"><span class="menu-title">GROOMING</span></a></li>
                     </ul>
                     <div class="dropdown">
                         <button onclick="myFunction()" type="button" class="dropbtn navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
@@ -35,12 +34,11 @@
                         </button>
                         <div id="myDropdown" class="dropdown-content">
                             <ul class="nav navbar-nav">
-                                <li class="part"><a href="behaviour.html" target="_self" class="has-category"><span class="menu-title">Pendientes</span></a></li>
-                                <li class="part"><a href="diet.html" target="_self" class="has-category"><span class="menu-title">Colgantes</span></a></li>
-                                <li class="part"><a href="eyes.html" target="_self" class="has-category"><span class="menu-title">Aros</span></a></li>
-                                <li class="part"><a href="fsf+others.html" target="_self" class="has-category"><span class="menu-title">Anillos</span></a></li>
-                                <li class="part"><a href="shopinsta.html" target="_self" class="has-category"><span class="menu-title">@pardobymireiapardo</span></a></li>
-                                <li class="part"><a href="grooming.html" target="_self" class="has-category"><span class="menu-title"><i class="fas fa-user"></i> Mi cuenta</span></a></li>
+                                    <li class="part"><a href="behaviour.html" target="_self" class="has-category"><span class="menu-title">BEHAVIOUR</span></a></li>
+                                    <li class="part"><a href="diet.html" target="_self" class="has-category"><span class="menu-title">DIET</span></a></li>
+                                    <li class="part"><a href="eyes.html" target="_self" class="has-category"><span class="menu-title">EYES</span></a></li>
+                                    <li class="part"><a href="fsf+others.html" target="_self" class="has-category"><span class="menu-title">FSF+</span></a></li>
+                                    <li class="part"><a href="grooming.html" target="_self" class="has-category"><span class="menu-title">GROOMING</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -66,7 +64,49 @@
             }
         </script>            
     <footer>
-
+            <div class="container footer">
+                <hr>
+                <div class="inside_footer row">
+                    <div class="col-sm-4">
+                        <a class='contactus' href="#contactForm" target="_self" class="has-category">Contact us</a>
+                    </div>  
+                </div>
+            </div>
     </footer>
+    <!--CONTACT FORM POP UP-->
+    <div class="container contactformbg">
+        <div id="contactForm">
+            <h1 class='cftitle'>¿Alguna duda?</h1>
+            <h4 class='cftitle'>¡Escribenos!</h4>
+                <form action='https://formspree.io/pardobymireia@gmail.com' method="POST">
+                    <input name="name" placeholder="Nombre" type="text" required />
+                    <input name="_replyto" placeholder="Email" type="email" required />
+                    <input name="message" placeholder="Tema" type="text" required />
+                    <textarea placeholder="Consulta"></textarea>
+                    <input class="btn btn-success formbtn" type="submit" />
+                    <input class="btn btn-success formbtn" type="reset" />
+                </form>
+        </div>
+    </div>
+    <!--END CONTACT FORM POP UP-->
+<script type="text/javascript" src="dwcdn/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="dwcdn/js/bootstrap.min.js"></script>
+<script>
+    // contact form animations
+$('.contact').click(function() {
+    $('#contactForm').fadeToggle();
+})
+$(document).mouseup(function(e) {
+    var container = $("#contactForm");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        &&
+        container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.fadeOut();
+    }
+});
+
+</script>
 </body>
 </html>
